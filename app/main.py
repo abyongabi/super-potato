@@ -2,7 +2,7 @@ from collections.abc import AsyncGenerator
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
-from app.routers import auth_router
+from app.routers import game_router
 
 
 @asynccontextmanager
@@ -11,5 +11,5 @@ async def lifespan(app: FastAPI) -> AsyncGenerator:
 
 
 app = FastAPI(lifespan=lifespan)
-app.include_router(auth_router.router, prefix="/auth", tags=["auth"])
+app.include_router(game_router.router, prefix="/game", tags=["game"])
 

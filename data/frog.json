@@ -1,0 +1,47 @@
+{
+  "title": "Frog Game",
+  "objects": {
+    "scissors":
+    {
+      "action": "scissors",
+      "wins": "paper",
+      "loses": "stone",
+      "draw": "scissors"
+    },
+    "paper":
+    {
+      "action": "paper",
+      "wins": "stone",
+      "loses": "scissors",
+        "draw": "paper"
+    },
+    "stone":
+    {
+      "action": "stone",
+      "wins": "scissors",
+      "loses": "paper",
+        "draw": "stone"
+    }
+},
+
+  "results": {
+    "wins":
+    {
+      "action": "lost",
+      "result": "I lost"
+    },
+    "lost":
+    {
+      "action": "wins",
+      "result": "I won"
+    },
+    "draw":
+    {
+      "action": "draw",
+      "result": [
+        "Not shy! Not me! ITZY!",
+        "Throw it back! Throw it back! Throw it back!"
+      ]
+    }
+}
+}
